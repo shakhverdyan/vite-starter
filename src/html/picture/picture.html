@@ -1,0 +1,5 @@
+<picture class="{=$class-name}">
+  <source type="image/avif" srcset="src/img/avif/{=$img-name}@1x.avif 1x, src/img/avif/{=$img-name}@2x.avif 2x ">
+  <source type="image/webp" srcset="src/img/webp/{=$img-name}@1x.webp 1x, src/img/webp/{=$img-name}@2x.webp 2x ">
+  <img src="src/img/{=$img-name}@1x.{=$type}" srcset="src/img/{=$img-name}@2x.{=$type} 2x" alt="{=$alt-name}">
+</picture>

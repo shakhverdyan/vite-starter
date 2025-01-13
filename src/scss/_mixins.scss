@@ -1,0 +1,112 @@
+@mixin breakpoint($point) {
+  @if $point==exxl {
+    @media (max-width: 1742px) {
+      @content;
+    }
+  }
+
+  @else if $point==xxl {
+    @media (max-width: 1600px) {
+      @content;
+    }
+  }
+
+  @else if $point==xl {
+    @media (max-width: 1537px) {
+      @content;
+    }
+  }
+
+  @else if $point==elg {
+    @media (max-width: 1367px) {
+      @content;
+    }
+  }
+
+  @else if $point==lg {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+
+  @else if $point==md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $point==emd {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $point==sm {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+
+  @else {
+    @media (max-width: $point) {
+      @content;
+    }
+  }
+}
+
+
+@mixin font-settings($size: false, $lh: false, $weight: false, $color: false) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $color {
+    color: $color;
+  }
+}
+
+@function vh($value, $screenHeight: 1080) {
+  @return calc($value / $screenHeight) * 100vh;
+}
+
+@function dvh($value, $screenHeight: 1080) {
+  @return calc($value / $screenHeight) * 100dvh;
+}
+
+@function vw($value, $screenWidth: 1920) {
+  @return calc($value / $screenWidth) * 100vw;
+}
+
+@mixin size-vh($width, $height, $templateHeight: 1080) {
+  width: calc($height / $templateHeight) * calc($width / $height) * 100vh;
+  height: calc($height / $templateHeight) * 100vh;
+}
+
+@mixin size-dvh($width, $height, $templateHeight: 1080) {
+  width: calc($height / $templateHeight) * calc($width / $height) * 100dvh;
+  height: calc($height / $templateHeight) * 100dvh;
+}
+
+@mixin size-vw($width, $height, $templateWidth: 1920) {
+  width: calc($width / $templateWidth) * 100vw;
+  height: calc($width / $templateWidth) * calc($height / $width) * 100vw;
+}
+
+@function vmin($px-value, $viewport-width: 1920, $viewport-height: 1080) {
+  $vmin-value: min($viewport-width, $viewport-height);
+  @return calc(($px-value / $vmin-value) * 100vmin);
+}
+
+
+@function vmax($px-value, $viewport-width: 1920) {
+  @return calc(($px-value / $viewport-width) * 100vmax);
+}

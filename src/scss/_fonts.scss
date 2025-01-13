@@ -1,0 +1,28 @@
+@font-face {
+  font-display: swap;
+  font-family: '5ka Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/5kaSansDesign-Light.woff2') format('woff2'),
+    url('../fonts/5kaSansDesign-Light.woff') format('woff');
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: '5ka Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/5kaSansDesign-SemiBold.woff2') format('woff2'),
+    url('../fonts/5kaSansDesign-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: '5ka Sans';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/5kaSansDesign-Black.woff2') format('woff2'),
+    url('../fonts/5kaSansDesign-Black.woff') format('woff');
+}
