@@ -1,5 +1,9 @@
 :root {
   --fz-main: 1em;
+  // --fz-main: 0.8333333333333334vmax;
+  --fz-200: 200px;
+  --fz-79: 79px;
+  --fz-59: 59px;
   --fz-50: 50px;
   --fz-49: 49px;
   --fz-40: 40px;
@@ -18,10 +22,16 @@
   --text-red-color: #E52322;
   --text-green-color: #00923a;
 
+
   //--bg-color
   --bg-header: #1F5C53;
   --bg-white: #ffffff;
   --bg-main-color: #206A60;
   --bg-green-color: #00923a;
+
+  // --dynamic-height: 0px;
+
+
+
 
 }

@@ -3,3 +3,19 @@
 @import "fonts";
 @import "default";
 @import "mixins";
+@import "modules/header";
+
+
+
+h1 {
+  @include font-settings(var(--fz-30), 1.2, 700, #fff, );
+  max-width: vw(500);
+
+  @include breakpoint(exxl) {
+    font-size: 18px;
+  }
+}
+
+.pack-mob {
+  @include size-vh(300, 400)
+}
